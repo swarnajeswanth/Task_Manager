@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(234, 238, 245);
+    overflow: hidden;
+}
+.main_Container {
+    width: 40%;
+    height: 70%;
+    text-align: center;
+}
+#Task_Container{
+    box-shadow:  0 0 1px 2px whitesmoke;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+.task{
+    width:80%;
+    height:25%;
+    overflow: hidden;
+    display: flex;
+    margin: 0 auto;
+}
+
+.task > input:first-child{
+    flex-basis: 75%;
+    padding-left: 10px;
+    outline: none;
+    border: transparent;
+    background-color: eff1f5;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.task > input[type="button"]{
+    flex-basis: 25%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(89, 82, 253);
+    color:white;
+    font-weight: bolder;
+    border: transparent;
+    cursor: pointer;
+}
+
+
+
+#Result_Container{
+    margin-top: 40px;
+    overflow-y:scroll;
+    height:80%;
+
+}
+#Result_Container::-webkit-scrollbar {
+    display: none;
+  }
+
+#Result_Container > div{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 1px 2px whitesmoke;
+    padding:13px;
+    margin: 15px 0 ;
+}
+
+.icons > *{
+    margin:5px 2px;
+    cursor: pointer;
+}
+
+
+.alert{
+    height:10px;
+}

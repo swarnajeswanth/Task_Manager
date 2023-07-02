@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Task_Manager</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="Home.css">
+    </head>
+    <body>
+        <div class="main_Container">
+            <div id="Task_Container">
+                <h3>Task Manager</h3>
+                
+                    <form action="" class="task">
+                        <input id="name" type="text" placeholder="e.g. Wash Dishes" name="Task">
+                        <input id="submit" type="button" value="Submit">
+                    </form>
+                    <div class="alert">
+                    </div>
+           </div>
+           <div id="Result_Container">
+                <% for(let i of Tasks){%>
+                    <div>
+                        <h4><%=i.Task%></h4>
+                        <div class="icons">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            <i class="fa-sharp fa-solid fa-trash"></i>
+                        </div>
+                        
+                    </div>
+                <%}%>
+                
+           </div>
+        </div>
+       <script src="Home.js"></script>
+    </body>
+</html>
